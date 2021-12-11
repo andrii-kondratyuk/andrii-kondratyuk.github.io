@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>  
+        <div id="map">
+
+        </div>
+        <div class="info-object hidden">
+            <div class="object__header">
+                <div class="object__descr">
+                    <div class="object__name">
+
+                    </div>
+                    <div class="object__lab">
+
+                    </div>
+                </div>
+                <div class="object__close">
+                    <span class="material-icons">
+                    close
+                    </span>
+                </div>
+            </div>
+            <div class="object__main">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Показник</th>
+                            <th>Фактичне значення</th>
+                            <th>ГДК (ОБУВ)</th>
+                            <th>Перевищення норми, раз</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="object__footer">
+                <div class="river__name">
+
+                </div>
+                <div class="report__id">
+
+                </div>
+                <div class="monitoring__id">
+
+                </div>
+                <div class="control__date">
+                    
+                </div>
+            </div>
+        </div>
+</body>
+<script src="dictionary.js"></script>
+<script src="khmelnitsk.js"></script>
+<script src="waterObjects.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</html>
