@@ -75,8 +75,18 @@ document.addEventListener('DOMContentLoaded', async () => {
             marker.on('click', (e) => {
                 map.setView(tuple, 14)
                 openObject(e.target.options.data)
+
             })
             marker.addTo(map)
+
+        })
+        const markers = document.querySelectorAll('.marker-icon')
+        console.log(markers)
+        markers.forEach(el => {
+            el.onclick = () => {
+                markers.forEach(el => el.classList.remove('active'))
+                el.classList.add('active')
+            }
         })
     }
 
@@ -138,6 +148,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         const infoBlock = document.querySelector('.info-object')
         infoBlock.classList.remove('hidden')
         infoBlock.querySelector('.object__close').onclick = () => {
+            document.querySelectorAll('.marker-icon').forEach(el => el.classList.remove('active'))
+
             infoBlock.classList.toggle('hidden')
         }
         innerData(obj, infoBlock)

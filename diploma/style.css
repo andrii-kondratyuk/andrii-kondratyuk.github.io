@@ -17,8 +17,13 @@
     align-items: center;
     justify-content: center;
     border-radius:50%;
-    box-shadow:0px 1.31288px 3.93865px rgba(103, 91, 91, 0.537); 
+    box-shadow:0px 1.31288px 3.93865px rgba(103, 91, 91, 0.537);
+    transition: all 0.2s; 
 
+}
+.marker-icon.active{
+    transform: scale(1.1);
+    border:3px solid rgba(255, 69, 69, 0.564)
 }
 .marker-icon .material-icons{
     color:rgb(104, 93, 235);
